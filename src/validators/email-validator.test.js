@@ -19,3 +19,8 @@ test('plus and underscore in email field is valid', () => {
 	const validator = new EmailValidator();
 	expect(validator.validate('sf+one_12345@sdfsf.frw')).toBe(true);
 });
+
+test('should pass if email field is empty', () => {
+	const validator = new EmailValidator();
+	expect(validator.validate('')).toBe(false);
+})

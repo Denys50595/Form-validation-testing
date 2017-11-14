@@ -1,8 +1,8 @@
-function Validator () {
+function Validator() {
 
 }
 
-Validator.prototype.validate = function(value){
+Validator.prototype.validate = function(value) {
 	return true;	
 }
 
